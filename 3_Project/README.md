@@ -16,11 +16,11 @@ Here are the questions this project aims to address:
    - Pandas: 
 Pandas library enabled me work with tabular data. It made it easy to clean, analyze, and manipulate the dataset, allowing me to perform tasks such as filtering, sorting, and summarizing the dataset in a simple and efficient way.
    - Matplotlib: Matplotlib library was used for creating interactive, and animated visualizations, such as charts and graphs. It allowed me to plot data and customize the appearance of my visuals.
-   - Seaborn: Seaborn library is built on top of Matplotlib and provides a higher-level interface that enabled me creat attractive and informative visual. It simplified the process of creating complex visualizations, especially for analyzing data patterns and relationships.
+   - Seaborn: Seaborn library is built on top of Matplotlib and provides a higher-level interface that enabled me create attractive and informative visual. It simplified the process of creating complex visualizations, especially for analyzing data patterns and relationships.
 - Visual Studio Code (VSC): VSC is the code editor I used to write and run my python code.
 
 # Data Preperation and Cleanup
-In this section, I imported the necessary libraries and dataset for analysis. I then formatted the dataset for proper analysis and filtered it to include only job postings in India to make our analysis more specific.
+In this section, I imported the necessary libraries and dataset for analysis. I then formatted the dataset for proper analysis and filtered it to include only job postings in India to make my analysis more specific.
 
 ## Import Required Libraries and Dataset
 First, I imported the required libraries and the dataset
@@ -55,8 +55,9 @@ df['job_skills'] = df.job_skills.apply(new_list)
 df_India = df[df['job_country'] == 'India']
 ```
 # Analysis
+This section of the project presents the visuals and findings from the research
 
-## 1. What are the most demanded skills for the top 3 most popular data roles?
+## 1. What are the most demanded skills for the top 3 most popular Data Roles?
 To identify the most in-demand skills for the top three popular data roles, I calculated the frequency of various skills across their respective job titles. I then filtered the dataset for the top three job titles with the highest counts and calculated the percentage of each skill within these roles. Finally, I created a plot to display the top three data jobs alongside their most sought-after skills.
 
 More details on the steps taken are provided here: [1_Skills_Request](2_Skills_Request.ipynb)
@@ -77,7 +78,7 @@ for i, India_job_title in enumerate(India_job_titles):
 plt.show()
 ```
 ### Result
-![skills request visualization](images/1st_Visual.png)
+![skills request](images/1st_visual.png)
 
 ### Insights
 - In India, SQL is the most sought-after skill in both the data analyst and data engineer roles, accounting for 52% and 68% of job postings, respectively. However, in the data scientist role, it is the second most demanded skill.
@@ -144,7 +145,7 @@ plt.show()
 
 - Data Scientist and Data Analyst job salaries show variation but with very few outliers.
 
-- In essence, based on this sourced data, there is not much variation in salaries across data roles in various industries in India, as the salaries are centered within the same range.
+- In essence, based on this sourced data, there is not much variation in salaries across data roles in various industries in India, as majority of the salaries are centered within the same range.
 
 ### Visualization Code for In_Demand Skills and their pay
 ``` python
@@ -203,7 +204,7 @@ plt.show()
 - The least-paid skills for data analysts are Oracle, AWS, and R, which appear to be cloud and programming skills.
 
 # Lessons Learned from This Project
-- During my course of taking course and completing this project ive been able to understand python and its significance in data analysis. Some specific lessons learned are;
+During my course of taking course and completing this project I've been able to understand python and its significance in data analysis. Some specific lessons learned are:
 
 - I learned about various Python functions, the Python standard library, and libraries such as Pandas, Matplotlib, and Seaborn, and their overall importance in the data analysis process.
 
@@ -216,11 +217,11 @@ plt.show()
 # Challenges Faced During Analysis
 This project presented several challenges, but each offered valuable learning experiences:
 
-- Handling large datasets: Managing and processing vast amounts of data from the dataset posed challenges, requiring effective strategies to maintain performance and prevent delays.
+- Handling Large Datasets: Managing and processing vast amounts of data from the dataset posed challenges, requiring effective strategies to maintain performance and prevent delays.
 
 - Limited Data Variation in India: After filtering the dataset for India, the limited number of job postings led to less data variation. However, I was able to identify potential reasons for this and focus my analysis on those factors.
 
-- Advanced data visualization:  Creating clear and impactful visualizations for complex datasets was a challenging task, but essential for effectively communicating key insights regarding analysis.
+- Advanced Data Visualization:  Creating clear and impactful visualizations for complex datasets was a challenging task, but essential for effectively communicating key insights regarding analysis.
 
 # Conclusion
 In conclusion, this project provided both valuable insights and significant challenges. It enhanced my skills in data cleaning, visualization, and interpretation. This exploration of the data analyst job market has been highly insightful. The knowledge gained not only deepens my understanding but also offers practical advice for those seeking to advance their careers in data analytics. As the market continues to evolve, staying informed through continuous analysis will be crucial to maintaining a competitive edge. This project lays a solid foundation for future research and emphasizes the importance of ongoing learning and adaptability in the ever-changing data indstry.
